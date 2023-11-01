@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+:root{
+    --paleBlue-PrimaryColor:hsl(225, 100%, 94%);
+    --brightBlue-PrimaryColor: hsl(245, 75%, 52%);
+    --veryPaleBlue-NeutralColor: hsl(225, 100%, 98%);
+    --desaturatedBlue-NeutralColor: hsl(224, 23%, 55%);
+    --darkBlue-NeutralColor: hsl(223, 47%, 23%);
+
+    --redHatDisplay-PrimaryFont:'Red Hat Display', sans-serif; 
+}
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: var(--redHatDisplay-PrimaryFont);
+    max-width: 100vw;
+    background-image:url(images/pattern-background-desktop.svg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: var( --paleBlue-PrimaryColor); 
+    box-sizing: border-box;
+}
+
+.hero img{
+    border-radius: 20px 20px 0 0;
+    max-width: 100%;
+}
+
+.summary-container{
+    max-width: 450px;
+    height: 697px;
+    background-color: white;
+    border-radius: 20px;
+    margin: 8% auto;
+}
+
+.card{
+    padding: 1em 3em;
+}
+
+.card h1{
+    margin: 0.5em;
+    padding-top: 12px ;
+    font-size: 28px;
+    font-weight: 900;
+    text-align: center;
+    color: #1F2E55;
+}
+
+.card-description{
+    color: var(--desaturatedBlue-NeutralColor);
+    line-height: 1.5;
+    text-align: center;
+    margin-bottom: 24px;
+    
+}
+
+.info-plan{
+    display: flex;
+    gap: 24px;
+    border-radius: 11px;
+    background-color: var(--veryPaleBlue-NeutralColor);
+    padding: 1.2em;
+    align-items: center;
+    line-height: 1.8;
+}
+
+
+.info-plan img{
+    margin-left: 1em;
+    width: 48px;
+    height: 48px;
+    border-radius: 50px;
+}
+
+.info-plan h2{
+    font-size: 16px;
+    font-weight: 900;
+    margin: 0;
+    color: #1F2E55;
+}
+
+.info-plan strong{
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--desaturatedBlue-NeutralColor);
+}
+
+.info-plan p{
+    font-size: 14px;
+    color: var(--brightBlue-PrimaryColor);
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: underline;
+    padding-left: 54px;
+}
+
+.card button{
+    width: 100%;
+    height: 50px;
+    margin-top: 2em;
+    border-radius: 11px;
+    background-color: var(--brightBlue-PrimaryColor);
+    border: none;
+    color: white;
+    font-family: var(--redHatDisplay-PrimaryFont);
+    font-size: 15px;
+    font-weight: 900;
+    box-shadow: 0 8px 48px -15px var(--brightBlue-PrimaryColor);
+    cursor: pointer;
+}
+
+.card button:hover{
+    background-color: #766CF1;
+}
+
+.card a{
+    display: block;
+    text-decoration: none;
+    margin-top: 2em;
+    font-weight: 900;
+    text-align: center;
+    color: var(--desaturatedBlue-NeutralColor);
+    cursor: pointer;
+}
+
+.card a:hover{
+    color: #1F2E55;
+}
+
+
+@media (max-width: 480px){
+    .summary-container{
+        min-width: 327px;
+        height: 567px;
+        margin: 12% 1em;
+    }
+
+    .card{
+        padding: .5em 1.5em;
+    }
+
+    .card h1{
+        margin-top: 0;
+        font-size: 22px;
+    }
+
+    .info-plan{
+        gap: 6px;
+        line-height: 1.4;
+    }
+    
+
+    .info-plan h2{
+        font-size: 14px;
+    }
+
+    .info-plan strong{
+        font-size: 14px;
+    }
+
+    .info-plan img{
+        margin-left: 0;
+    }
+
+    .info-plan p{
+        font-size: 13px;
+        padding-left: 28px;
+    }
+
+    .card a{
+        margin-top: 1.5em;
+ 
+    }
+    
+
+  }
